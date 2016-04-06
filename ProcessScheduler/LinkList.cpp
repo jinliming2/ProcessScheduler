@@ -116,14 +116,14 @@ std::ostream& NodeList<T>::Print(std::ostream& out) const {
 
 //≈≈–Ú
 template<typename T>
-NodeList<T>& NodeList<T>::Sort() {
+NodeList<T>& NodeList<T>::Sort(int(*sortFunction)(T&, T&)) {
     Node<T> *p = first;
     bool finish = false;
     for(int i = 0; i < length - 1; i++) {
         finish = true;
         Node<T> *temp = p;
         for(int j = 0; j < length - 1 - i; j++) {
-            if(temp->data - temp->pNext->data > 0) {
+            if((*sortFunction)(temp->data, temp->pNext->data) > 0) {
                 T ii;
                 ii = temp->data;
                 temp->data = temp->pNext->data;

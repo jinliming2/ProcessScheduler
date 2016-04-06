@@ -32,7 +32,7 @@ public:
     //打印表
     std::ostream& Print(std::ostream& out) const;
     //排序
-    NodeList& Sort();
+    NodeList& Sort(int(*sortFunction)(T&, T&));
     //链表合并
     NodeList& AddNodeList(const NodeList& Source, const bool sort = false);
 };
