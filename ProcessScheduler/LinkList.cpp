@@ -116,7 +116,7 @@ std::ostream& NodeList<T>::Print(std::ostream& out) const {
 
 //≈≈–Ú
 template<typename T>
-NodeList<T>& NodeList<T>::Sort(int(*sortFunction)(T&, T&)) {
+NodeList<T>& NodeList<T>::Sort(int(*sortFunction)(T& left, T& right)) {
     Node<T> *p = first;
     bool finish = false;
     for(int i = 0; i < length - 1; i++) {

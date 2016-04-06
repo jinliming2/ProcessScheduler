@@ -149,10 +149,14 @@
     <Text Include="data.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="FCFS.cpp" />
+    <ClCompile Include="Job.cpp" />
     <ClCompile Include="LinkList.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="FCFS.h" />
+    <ClInclude Include="Job.h" />
     <ClInclude Include="LinkList.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
