@@ -145,7 +145,7 @@ NodeList<T>& NodeList<T>::Sort() {
 template<typename T>
 NodeList<T>& NodeList<T>::AddNodeList(const NodeList& Source, const bool sort) {
     T value;
-    for(int i = 1; i <= Source.length; i++) {
+    for(int i = 0; i < Source.length; i++) {
         Source.Find(i, value);
         this->Insert(this->length, value, false);
     }
