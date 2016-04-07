@@ -22,7 +22,7 @@ public:
     //销毁
     ~NodeList();
     //插入，插入时是否排序
-    NodeList& Insert(const int x, const T &value, const bool sort = false);
+    NodeList& Insert(int x, const T &value, const bool sort = false);
     //是否为空
     bool IsEmpty() const;
     //获取长度

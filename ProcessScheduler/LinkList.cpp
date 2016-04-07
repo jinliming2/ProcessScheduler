@@ -1,7 +1,7 @@
 #include "LinkList.h"
 //初始化
 template<typename T>
-inline NodeList<T>::NodeList() {
+NodeList<T>::NodeList() {
     first = new Node<T>;
     first->pNext = nullptr;
     length = 0;
@@ -32,7 +32,7 @@ NodeList<T>::~NodeList() {
 
 //插入，插入时是否排序
 template<typename T>
-NodeList<T>& NodeList<T>::Insert(const int x, const T& value, const bool sort) {
+NodeList<T>& NodeList<T>::Insert(int x, const T& value, const bool sort) {
     if(x < 0 || x > length) {
         x = length;
     }
@@ -111,7 +111,7 @@ template<typename T>
 std::ostream& NodeList<T>::Print(std::ostream& out) const {
     Node<T> *p = first->pNext;
     for(int i = 0; i < length && p != nullptr; i++, p = p->pNext) {
-        out << p->data << ' ';
+        out << p->data << '\n';
     }
     return out;
 }
