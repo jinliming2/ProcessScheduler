@@ -8,5 +8,11 @@ std::ostream & operator<<(std::ostream &output, Job &job) {
 }
 //按到达时间排序函数
 int jobSortArrivalTime(Job& left, Job& right) {
-    return left.arrivalTime < right.arrivalTime ? -1 : 1;
+    int x = left.arrivalTime - right.arrivalTime;
+    return x < 0 ? -1 : x > 0 ? 1 : 0;
+}
+//按执行时间长短排序函数
+int jobSortExecutionTime(Job& left, Job& right) {
+    int x = left.executionTime - right.executionTime;
+    return x < 0 ? -1 : x > 0 ? 1 : 0;
 }

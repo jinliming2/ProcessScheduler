@@ -16,3 +16,6 @@ std::ostream& operator<<(std::ostream &, Job&);
 
 //按到达时间排序函数
 int jobSortArrivalTime(Job&, Job&);
+
+//按执行时间长短排序函数
+int jobSortExecutionTime(Job&, Job&);
