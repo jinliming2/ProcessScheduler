@@ -19,3 +19,6 @@ int jobSortArrivalTime(Job&, Job&);
 
 //按执行时间长短排序函数
 int jobSortExecutionTime(Job&, Job&);
+
+//按优先级排序函数
+int jobSortPriority(Job&, Job&);

@@ -16,3 +16,8 @@ int jobSortExecutionTime(Job& left, Job& right) {
     int x = left.executionTime - right.executionTime;
     return x < 0 ? -1 : x > 0 ? 1 : 0;
 }
+//按优先级排序函数
+int jobSortPriority(Job& left, Job& right) {
+    int x = left.priority - right.priority;
+    return x < 0 ? -1 : x > 0 ? 1 : 0;
+}
