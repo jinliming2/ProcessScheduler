@@ -35,6 +35,9 @@
     <ClCompile Include="HPF.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="RR.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="LinkList.h">
@@ -50,6 +53,9 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="HPF.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="RR.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

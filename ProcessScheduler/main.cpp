@@ -5,6 +5,7 @@
 #include "FCFS.h"
 #include "SJF.h"
 #include "HPF.h"
+#include "RR.h"
 using namespace std;
 
 int main() {
@@ -49,6 +50,19 @@ int main() {
     cout << "****************** 开始模拟 HPF 优先权高者优先 ******************\n\n";
     HPF hpf(jobs);
     hpf.execute(cout);
+    cout << '\n';
+    cout << "*****************************************************************\n";
+
+    //时间片轮转
+    cout << "********************* 准备模拟 RR 时间片轮转 ********************"
+        << endl << "请输入时间片大小（slice > 0）：";
+    unsigned int slice = 0;
+    while(slice <= 0) {
+        cin >> slice;
+    }
+    cout << "********************* 开始模拟 RR 时间片轮转 ********************\n\n";
+    RR rr(jobs, slice);
+    rr.execute(cout);
     cout << '\n';
     cout << "*****************************************************************\n";
     system("pause");

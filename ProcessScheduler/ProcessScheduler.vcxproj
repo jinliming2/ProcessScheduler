@@ -153,6 +153,7 @@
     <ClCompile Include="HPF.cpp" />
     <ClCompile Include="Job.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="RR.cpp" />
     <ClCompile Include="SJF.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -160,6 +161,7 @@
     <ClInclude Include="HPF.h" />
     <ClInclude Include="Job.h" />
     <ClInclude Include="LinkList.h" />
+    <ClInclude Include="RR.h" />
     <ClInclude Include="SJF.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
