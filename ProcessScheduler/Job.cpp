@@ -2,7 +2,7 @@
 std::ostream & operator<<(std::ostream &output, Job &job) {
     output << "JobID:" << job.jobId
         << "\tArrivalTime:" << job.arrivalTime
-        << "\tExecutionTime:" << job.executionTime
+        << "\t ExecutionTime:" << job.executionTime
         << "\tPriority:" << job.priority;
     return output;
 }
