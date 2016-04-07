@@ -29,6 +29,9 @@
     <ClCompile Include="Job.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="SJF.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="LinkList.h">
@@ -38,6 +41,9 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="FCFS.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SJF.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

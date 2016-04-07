@@ -3,6 +3,7 @@
 #include "Job.h"
 #include "LinkList.h"
 #include "FCFS.h"
+#include "SJF.h"
 using namespace std;
 
 int main() {
@@ -33,6 +34,13 @@ int main() {
     cout << "******************* 开始模拟 FCFS 先来先服务 ********************\n\n";
     FCFS fcfs(jobs);
     fcfs.execute(cout);
+    cout << '\n';
+    cout << "*****************************************************************\n";
+
+    //短作业优先
+    cout << "******************** 开始模拟 SJF 短作业优先 ********************\n\n";
+    SJF sjf(jobs);
+    sjf.execute(cout);
     cout << '\n';
     cout << "*****************************************************************\n";
     system("pause");
