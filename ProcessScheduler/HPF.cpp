@@ -16,7 +16,7 @@ void HPF::execute(std::ostream & output) {
         while(list.GetLength() > 0) {
             list.Find(0, job);
             if(job.arrivalTime <= now) {
-                //已到达的列表，按执行时间长短排序
+                //已到达的列表，按优先级排序
                 arrived.Insert(arrived.GetLength(), job, true);
                 list.Delete(0);
                 continue;
