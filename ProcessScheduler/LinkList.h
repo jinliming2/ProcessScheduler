@@ -12,9 +12,13 @@ private:
     Node<T> *first;
     //当前数据长度
     int length;
+    //比较函数
+    int(*compare)(T& left, T& right);
 public:
     //初始化
     NodeList();
+    //拷贝构造函数
+    NodeList(const NodeList<T>&);
     //销毁
     ~NodeList();
     //插入，插入时是否排序
@@ -32,7 +36,7 @@ public:
     //打印表
     std::ostream& Print(std::ostream& out) const;
     //排序
-    NodeList& Sort(int(*sortFunction)(T& left, T& right));
+    NodeList& Sort();
     //链表合并
     NodeList& AddNodeList(const NodeList& Source, const bool sort = false);
 };
