@@ -1,7 +1,8 @@
 #include <iostream>
 #include <fstream>
 #include "Job.h"
-#include "LinkList.cpp"  //模板类，需要包含源文件cpp，包含头文件h会不通过
+#include "LinkList.h"
+#include "FCFS.h"
 using namespace std;
 
 int main() {
@@ -27,7 +28,13 @@ int main() {
         jobs.Insert(jobs.GetLength(), job, true);
     }
     file.close();
-    jobs.Print(cout);
+
+    //先来先服务
+    cout << "******************* 开始模拟 FCFS 先来先服务 ********************\n\n";
+    FCFS fcfs(jobs);
+    fcfs.execute(cout);
+    cout << '\n';
+    cout << "*****************************************************************\n";
     system("pause");
     return 0;
 }

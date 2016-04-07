@@ -23,9 +23,6 @@
     <ClCompile Include="main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="LinkList.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="FCFS.cpp">
       <Filter>源文件</Filter>
     </ClCompile>

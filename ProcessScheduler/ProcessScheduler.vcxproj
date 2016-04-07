@@ -151,7 +151,6 @@
   <ItemGroup>
     <ClCompile Include="FCFS.cpp" />
     <ClCompile Include="Job.cpp" />
-    <ClCompile Include="LinkList.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
