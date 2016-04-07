@@ -32,6 +32,9 @@
     <ClCompile Include="SJF.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="HPF.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="LinkList.h">
@@ -44,6 +47,9 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="SJF.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="HPF.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
