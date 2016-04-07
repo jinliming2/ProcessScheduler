@@ -154,3 +154,9 @@ NodeList<T>& NodeList<T>::AddNodeList(const NodeList& Source, const bool sort) {
     }
     return *this;
 }
+
+//设置比较函数
+template<typename T>
+void NodeList<T>::SetCompareFunction(int(*function)(T& left, T& right)) {
+    compare = function;
+}

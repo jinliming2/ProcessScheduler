@@ -39,4 +39,6 @@ public:
     NodeList& Sort();
     //链表合并
     NodeList& AddNodeList(const NodeList& Source, const bool sort = false);
+    //设置比较函数
+    void SetCompareFunction(int(*function)(T& left, T&right));
 };
