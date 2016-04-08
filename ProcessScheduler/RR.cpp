@@ -34,7 +34,6 @@ void RR::execute(std::ostream & output) {
         arrived.Find(0, jp);
         arrived.Delete(0);
         job = jp.job;
-        //output << now << '\n';
         if(job.executionTime - jp.operated < slice) {
             now += job.executionTime - jp.operated;
             output << job.jobId << " 号作业执行了 " << (job.executionTime - jp.operated) << "\n";
@@ -55,7 +54,6 @@ void RR::execute(std::ostream & output) {
             totalTurnover += now - job.arrivalTime;
             totalRightTurnover += double(now - job.arrivalTime) / job.executionTime;
         }
-        //output << now << '\n';
     }
     output << "\n平均等待时间：" << (totalWait / total)
         << "\t平均周转时间：" << (totalTurnover / total)
